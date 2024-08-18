@@ -19,6 +19,12 @@ This Streamlit app serves as an AI-powered assistant for building Coinweb blockc
 
 ## Installation
 
+IMPORTANT: Locate app.py lines below and comment it out if uncommented to run locally. On streamlit.io make sure they are uncommented out:
+# WARNING: The following two lines are ONLY for Streamlit.
+# Remove them from local install!!
+__import__('pysqlite3')
+sys.modules['sqlite3'] = sys.modules.pop('pysqlite3')
+
 1. Clone this repository:
    ```
    git clone <your-repo-url>
